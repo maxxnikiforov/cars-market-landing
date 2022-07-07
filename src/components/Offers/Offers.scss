@@ -1,0 +1,103 @@
+@import "../../utils";
+
+.offers {
+  background-color: $background;
+
+  &__title {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $H2_option;
+    margin-bottom:  40px;
+    padding-top: 50px;
+
+    @include onTablet {
+      margin-bottom: 80px;
+      padding-top: 100px;
+    }
+  }
+
+  &__selectors {
+
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__select {
+    background-color: $background;
+    width: 200px;
+    height: 48px;
+    margin-top: 10px;
+    border-radius: 15px;
+
+    @include onTablet {
+      width: 140px;
+      margin-top: 0;
+    }
+
+    @include onDesktop {
+      width: 170px;
+      margin-top: 0;
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 220px;
+    min-width: 150px;
+    background-color: $brand_color;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $background;
+    margin-top: 10px;
+    border-radius: 15px;
+
+    @include onDesktop {
+      width: 290px;
+      margin-top: 0;
+    }
+  }
+
+  &__show {
+
+    &-title {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 23px;
+    }
+
+    &-year {
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+      color: $text_possible_option;
+    }
+
+    &-details {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      color: $text_possible_option;
+    }
+
+    &-price {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+}
+
+.card {
+  margin-top: 20px;
+}

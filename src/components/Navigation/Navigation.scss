@@ -1,0 +1,39 @@
+.navigation {
+
+  &__links {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // max-width: 300px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    &-fb {
+      display: inline-block;
+      background-image: url(../../images/fb_logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 15px;
+      width: 15px;
+    }
+
+    &-insta {
+      display: inline-block;
+      background-image: url(../../images/insta_logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+
+// .link {
+//   font-size: 15px;
+// }
