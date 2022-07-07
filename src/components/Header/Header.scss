@@ -1,0 +1,59 @@
+@import "../../utils";
+
+.header {
+  height: 100vh;
+  background-image: url(../../images/header_img.jpg);
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 200px;
+  }
+
+  &__logo {
+    background-image: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+  }
+
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 68px;
+    margin: 32px 0 32px;
+
+    @include onTablet {
+      font-size: 50px;
+      margin: 132px 0 32px;
+    }
+  }
+
+  &__text {
+
+    &-paragraph {
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    width: 296px;
+    height: 56px;
+    border-color: white;
+    color: white;
+    margin-top: 16px;
+
+    @include onTablet {
+      margin-top: 72px;
+    }
+  }
+}
