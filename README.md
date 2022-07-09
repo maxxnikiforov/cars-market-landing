@@ -1,9 +1,5 @@
-# React Starter Pack
+cars-market-landing
 
-To use this template click `Use this template`
+DEMO Link https://maxxnikiforov.github.io/cars-market-landing/
 
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+Technology: React / JS, HTML, CSS / SCSS, React-Bootstrap.
