@@ -1,9 +1,7 @@
 import React from 'react';
 import { Container, Button, Row, Col } from 'react-bootstrap';
-// import { Button } from 'bootstrap';
 
 import './Header.scss';
-// import { Container, Navbar } from 'react-bootstrap';
 import { Navigation } from '../Navigation/Navigation';
 
 export const Header = () => (

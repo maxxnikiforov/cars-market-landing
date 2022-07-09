@@ -1,23 +1,25 @@
 import React from 'react';
-import { Navbar, Container } from 'react-bootstrap';
-import './Navigation.scss';
+import { Container, Navbar } from 'react-bootstrap';
+import './Footer.scss';
 
-export const Navigation = () => (
-  <div className="navigation">
-    <Container>
+export const Footer = () => (
+  <div className="footer">
+    <div className="footer__container">
       <Navbar expand="lg" variant="dark" bg="transparent">
-        <Container>
-          <Navbar.Brand href="#" className="header__logo" />
+        <Container className="footer__links">
+          <Navbar.Brand href="#" className="footer__logo" />
           <div className="navigation__links">
-            <Navbar.Brand href="#questions" className="navigation__link">
+            <Navbar.Brand href="#" className="navigation__link">
               Inventory
             </Navbar.Brand>
-            <Navbar.Brand href="#questions" className="navigation__link">
+            <Navbar.Brand href="#" className="navigation__link">
               Financing
             </Navbar.Brand>
             <Navbar.Brand href="#email" className="navigation__link">
               Contacts
             </Navbar.Brand>
+          </div>
+          <div>
             <Navbar.Brand
               href="https://www.facebook.com/ACMonza"
               target="_blank"
@@ -31,6 +33,6 @@ export const Navigation = () => (
           </div>
         </Container>
       </Navbar>
-    </Container>
+    </div>
   </div>
 );

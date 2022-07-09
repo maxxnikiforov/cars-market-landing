@@ -17,9 +17,9 @@
   &__logo {
     background-image: url(../../images/logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 30px;
-    width: 100px;
+    background-size: contain;
+    height: 35px;
+    width: 140px;
   }
 
   &__title {
