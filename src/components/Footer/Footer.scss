@@ -1,0 +1,19 @@
+@import "../../utils";
+
+.footer {
+  height: 120px;
+  background-color: black;
+
+  &__links {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  &__logo {
+    background-image: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 190px;
+  }
+}

@@ -7,6 +7,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 34888,
+  date: 20,
+  sold: true,
 },
 {
   id: 2,
@@ -17,6 +19,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 27875,
+  date: 2,
+  sold: false,
 },
 {
   id: 3,
@@ -27,6 +31,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 38775,
+  date: 20,
+  sold: false,
 },
 {
   id: 4,
@@ -37,6 +43,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 23728,
+  date: 20,
+  sold: false,
 },
 {
   id: 5,
@@ -47,6 +55,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 11788,
+  date: 20,
+  sold: false,
 },
 {
   id: 6,
@@ -57,6 +67,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 38878,
+  date: 20,
+  sold: false,
 },
 {
   id: 7,
@@ -67,6 +79,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 18620,
+  date: 2,
+  sold: false,
 },
 {
   id: 8,
@@ -77,6 +91,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 34888,
+  date: 20,
+  sold: true,
 },
 {
   id: 9,
@@ -87,6 +103,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 34888,
+  date: 20,
+  sold: false,
 },
 {
   id: 10,
@@ -97,6 +115,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 27875,
+  date: 20,
+  sold: false,
 },
 {
   id: 11,
@@ -107,6 +127,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 38775,
+  date: 20,
+  sold: false,
 },
 {
   id: 12,
@@ -117,6 +139,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 23728,
+  date: 4,
+  sold: false,
 },
 {
   id: 13,
@@ -127,6 +151,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 34888,
+  date: 20,
+  sold: false,
 },
 {
   id: 14,
@@ -137,6 +163,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 27875,
+  date: 20,
+  sold: false,
 },
 {
   id: 15,
@@ -147,6 +175,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 38775,
+  date: 2,
+  sold: false,
 },
 {
   id: 16,
@@ -157,6 +187,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 23728,
+  date: 15,
+  sold: false,
 },
 {
   id: 17,
@@ -167,6 +199,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 11788,
+  date: 3,
+  sold: false,
 },
 {
   id: 18,
@@ -177,6 +211,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 38878,
+  date: 20,
+  sold: false,
 },
 {
   id: 19,
@@ -187,6 +223,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 18620,
+  date: 4,
+  sold: false,
 },
 {
   id: 20,
@@ -197,6 +235,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 34888,
+  date: 25,
+  sold: true,
 },
 {
   id: 21,
@@ -207,6 +247,8 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Disel',
   price: 34888,
+  date: 1,
+  sold: false,
 },
 {
   id: 22,
@@ -217,5 +259,7 @@ export const cars = [{
   trans: 'Automatic',
   fuel: 'Gas',
   price: 27875,
+  date: 20,
+  sold: false,
 },
 ];

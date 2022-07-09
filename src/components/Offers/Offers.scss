@@ -2,6 +2,11 @@
 
 .offers {
   background-color: $background;
+  padding-bottom: 50px;
+
+  @include onTablet {
+    padding-bottom: 100px;
+  }
 
   &__title {
     text-align: center;
@@ -94,6 +99,55 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 27px;
+    }
+
+    &-imgbox {
+      position: relative;
+    }
+
+    &-sold {
+      position: absolute;
+      top: 30%;
+      right: 30%;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 75px;
+    }
+
+    &-new{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 70px;
+      height: 24px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      border-bottom-right-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  }
+
+  &__checkBox {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      color: $text_possible_option;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 }
