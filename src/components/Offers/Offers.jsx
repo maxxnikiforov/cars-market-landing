@@ -6,6 +6,7 @@ import {
   Row,
   Col,
   Card,
+  Button,
 } from 'react-bootstrap';
 import './Offers.scss';
 import { cars } from '../../utils/cars';
@@ -15,6 +16,17 @@ export const Offers = () => {
   const [selectedModel, setSelectedModel] = useState('Model');
   const [selectedMaker, setSelectedMaker] = useState('Make');
   const [selectedMileage, setSelectedMileage] = useState('Mileage');
+  const [available, setAvailable] = useState(false);
+  const [sortByDate, setSortByDate] = useState(false);
+
+  function reset() {
+    setSelectedModel('Model');
+    setSelectedYear(0);
+    setSelectedMileage('Mileage');
+    setSelectedMaker('Make');
+    setAvailable(false);
+    setSortByDate(false);
+  }
 
   let models = [];
 
@@ -35,14 +47,8 @@ export const Offers = () => {
       }
     }
 
-    // eslint-disable-next-line no-console
-    console.log(makerModels);
-
     models = models.filter(model => makerModels.includes(model));
   }
-
-  // eslint-disable-next-line no-console
-  console.log(models);
 
   const factorys = [];
 
@@ -66,10 +72,20 @@ export const Offers = () => {
 
   let filteredCars = [];
 
-  if (selectedYear !== 0) {
-    filteredCars = cars.filter(car => car.year === selectedYear);
+  if (sortByDate) {
+    filteredCars = cars.sort((c1, c2) => c1.date - c2.date);
+  } else {
+    filteredCars = cars.sort((c1, c2) => c2.date - c1.date);
+  }
+
+  if (available) {
+    filteredCars = cars.filter(car => !car.sold);
   } else {
     filteredCars = [...cars];
+  }
+
+  if (selectedYear !== 0) {
+    filteredCars = filteredCars.filter(car => car.year === selectedYear);
   }
 
   if (selectedMaker !== 'Make') {
@@ -136,18 +152,34 @@ export const Offers = () => {
             <option value="50000">less 50.000</option>
             <option value="30000">less 30.000</option>
           </Form.Select>
-          <div className="offers__total">{`${cars.length} cars`}</div>
+          <Button
+            variant="light"
+            className="offers__total"
+            onClick={reset}
+          >
+            {`${cars.length} cars`}
+          </Button>
         </Container>
         <Container>
           <div className="offers__checkBox">
-            <Form.Check
-              className="offers__checkBox-item"
-              label="Instantly available vehicles"
-            />
-            <Form.Check
-              className="offers__checkBox-item"
-              label="Publication date (ascending)"
-            />
+            <label htmlFor="check1">
+              <Form.Check
+                id="check1"
+                checked={available}
+                onChange={() => setAvailable(!available)}
+                className="offers__checkBox-item"
+                label="Instantly available vehicles"
+              />
+            </label>
+            <label htmlFor="check2">
+              <Form.Check
+                id="check2"
+                checked={sortByDate}
+                onChange={() => setSortByDate(!sortByDate)}
+                className="offers__checkBox-item"
+                label="Publication date (ascending)"
+              />
+            </label>
           </div>
         </Container>
 

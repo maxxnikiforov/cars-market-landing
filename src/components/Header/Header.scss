@@ -23,36 +23,70 @@
   }
 
   &__title {
-    color: white;
+    color: $background;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 68px;
-    margin: 32px 0 32px;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 8px 0 8px;
+
+    @include onSmallTablet {
+      font-size: 32px;
+      line-height: 32px;
+      margin: 32px 0 32px;
+    }
 
     @include onTablet {
       font-size: 50px;
-      margin: 132px 0 32px;
+      line-height: 68px;
+      margin: 72px 0 32px;
+    }
+
+    @include onDesktop {
+      margin: 138px 0 32px;
     }
   }
 
   &__text {
 
     &-paragraph {
-      color: white;
+      color: $background;
       font-weight: 400;
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 12px;
+      line-height: 14px;
+
+      @include onTablet {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
 
   &__button {
-    width: 296px;
-    height: 56px;
-    border-color: white;
-    color: white;
-    margin-top: 16px;
+    width: 240px;
+    height: 42px;
+    border: 2px solid $background;
+    border-radius: 15px;
+    color: $background;
+    margin-top: 8px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $background;
+      color: black;
+      border-color: transparent;
+    }
+
+    @include onSmallTablet {
+      margin-top: 16px;
+    }
 
     @include onTablet {
+      margin-top: 36px;
+      width: 296px;
+      height: 56px;
+    }
+
+    @include onDesktop {
       margin-top: 72px;
     }
   }

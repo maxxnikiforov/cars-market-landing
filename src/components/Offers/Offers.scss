@@ -59,14 +59,27 @@
     width: 220px;
     min-width: 150px;
     background-color: $brand_color;
+    border: 2px solid $brand_color !important;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     color: $background;
     margin-top: 10px;
     border-radius: 15px;
+    transition: all 0.5s;
 
-    @include onDesktop {
+    &:hover {
+      background-color: $background;
+      color: $brand_color;
+    }
+
+    &:active {
+      background-color: $brand_color;
+      border: 2px solid $brand_color;
+      color: $background;
+    }
+
+    @include onTablet {
       width: 290px;
       margin-top: 0;
     }
@@ -142,16 +155,35 @@
   &__checkBox {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 
     &-item {
       color: $text_possible_option;
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $brand_color;
+      }
     }
+  }
+}
+.form-check .form-check-input {
+  background-color: $background;
+
+  &:checked {
+    background-color: $brand_color;
+    outline: none !important;
   }
 }
 
 .card {
   margin-top: 20px;
+
+  &:hover .offers__show-title {
+    text-decoration-line: underline;
+  }
 }
