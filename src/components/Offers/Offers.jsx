@@ -183,7 +183,7 @@ export const Offers = () => {
           </div>
         </Container>
 
-        <div className="offers__show">
+        <div className="offers__show" id="cars">
           <Container>
             <Row>
               {filteredCars.map(car => (
