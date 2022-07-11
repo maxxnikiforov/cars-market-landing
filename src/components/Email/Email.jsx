@@ -17,6 +17,7 @@ export const Email = () => {
             Sign up for our newsletter and be the
             first to know when we publish new vehicle offers.
           </p>
+          {email && <p className="email__get">{email}</p>}
         </div>
         <Form
           className="email__form"
@@ -38,7 +39,6 @@ export const Email = () => {
               placeholder="Enter your email"
               className="email__input"
             />
-            {email && <span style={{ color: 'white' }}>{email}</span>}
           </Form.Group>
           <Button variant="light" type="submit" className="email__button">
             Subscribe now

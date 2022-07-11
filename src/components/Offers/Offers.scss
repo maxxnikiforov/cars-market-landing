@@ -25,11 +25,13 @@
   }
 
   &__selectors {
+    margin-bottom: 12px;
 
     @include onTablet {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 24px;
     }
   }
 

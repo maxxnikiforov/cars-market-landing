@@ -30,9 +30,15 @@ export const Header = () => (
           </Col>
         </Row>
       </Container>
-      <Button variant="dark" className="header__button">
-        Browse cars
-      </Button>
+      <form action="#cars" method="GET">
+        <Button
+          variant="dark"
+          className="header__button"
+          type="submit"
+        >
+          Browse cars
+        </Button>
+      </form>
     </Container>
   </div>
 );
