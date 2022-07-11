@@ -15,6 +15,10 @@
   &__accordion {
     max-width: 820px;
     margin: auto;
+
+    &-body {
+      text-align: left;
+    }
   }
 
   &__title {

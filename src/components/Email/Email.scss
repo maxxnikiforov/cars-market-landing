@@ -52,6 +52,10 @@
     font-size: 15px;
     line-height: 20px;
 
+    &:not(:focus) {
+      color: $background;
+    }
+
     @include onDesktop {
       min-width: 400px;
     }
@@ -63,6 +67,12 @@
 
   &__button {
     height: 48px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: black;
+      color: $background;
+    }
 
     @include onDesktop {
       margin-left: 20px;
