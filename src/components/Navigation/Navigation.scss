@@ -1,9 +1,18 @@
+@import "../../utils";
+
 .navigation {
 
   &__link {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: black !important;
+      background-color: $background;
+      border-radius: 15px;
+    }
 
     &-fb {
       display: inline-block;

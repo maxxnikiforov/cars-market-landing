@@ -52,6 +52,10 @@
     font-size: 15px;
     line-height: 20px;
 
+    &:not(:focus) {
+      color: $background;
+    }
+
     @include onDesktop {
       min-width: 400px;
     }
